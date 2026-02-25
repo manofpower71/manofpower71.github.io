@@ -21,27 +21,6 @@
       margin-right: 15px;
     }
     </style>
-    <style>
-     .container {
-      position: relative;
-      display: inline-block;
-     }
-
-     .thumbnail {
-     display: block;
-     width: 200px;
-     }
-
-     .full-image {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 200px; /* same size as thumbnail */
-     height: 100%;
-     object-fit: cover;
-     display: none;
-     }
-    </style>
   </head>
   <body>
     
@@ -73,29 +52,10 @@
       <source src="https://lambda.vgmtreasurechest.com/soundtracks/digital-devil-saga-avatar-tuner-1-2-original-sound-track-integral/jzxnyfcy/1-07%20-%20Muladhara.mp3" type="audio/mpeg">
     </audio>
       
-<script>
-const container = document.querySelector('.container');
-const fullImage = container.querySelector('.full-image');
-
-container.addEventListener('mouseenter', () => {
-  if (!fullImage.src) {
-    fullImage.src = fullImage.dataset.src; // load full image only now
-  }
-  fullImage.style.display = 'block';
-});
-
-container.addEventListener('mouseleave', () => {
-  fullImage.style.display = 'none';
-});
-</script>
-
     <div class="drawings">
-      <div class="container">
     <a href="/drawings/Based Superweapon Magironika.gif" target="_blank" rel="noopener noreferrer">
-      <img src="/thumbs/Based Superweapon Magironika-thumb.jpg" alt="Based Superweapon Magironika" class="border thumbnail">
-      <img src="/drawings/Based Superweapon Magironika.gif" class="full-image" data-src="full.jpg">
+      <img src="/thumbs/Based Superweapon Magironika-thumb.jpg" alt="Based Superweapon Magironika" class="border">
     </a>
-    </div>
     
     <a href="/drawings/Cut 2.png" target="_blank" rel="noopener noreferrer">
       <img src="/drawings/Cut 2.png" alt="Cut 2" class="border">
