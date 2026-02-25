@@ -9,6 +9,20 @@ body {
   line-height: 0.2;
 }
 
+.icon {
+  float: left;
+  margin-right: 10px;
+}
+
+.outline {
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
 .drawings {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
