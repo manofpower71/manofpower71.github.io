@@ -5,6 +5,11 @@ body {
   font-size: 15px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .text {
   line-height: 0.3;
 }
@@ -30,14 +35,14 @@ body {
 
 .drawings {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   float: left;
   gap: 5px
 }
 
 .drawings img {
-  width: 200px;
-  height: auto;
+  width: 100%;
+  max-width: 200px;
   display: block;
 }
 
