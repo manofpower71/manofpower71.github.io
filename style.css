@@ -11,22 +11,22 @@ body {
 
 .drawings {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 }
 
 .drawings img {
-  width: 350px;
+  width: 200px;
   height: auto;
   display: block;
 }
 
 .border {
-  border: 10px solid transparent;
+  border: 5px solid transparent;
   background: transparent;
 }
 .border:hover {
-  border: 10px solid #d4d8ef;
+  border: 5px solid #d4d8ef;
   background: #d4d8ef;
 }
 @font-face {
