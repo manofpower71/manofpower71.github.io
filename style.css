@@ -36,8 +36,7 @@ img {
 .drawings {
   display: flex;
   flex-wrap: wrap;
-  float: left;
-  gap: 5px
+  gap: 10px
 }
 
 .drawings img {
