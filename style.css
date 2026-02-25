@@ -14,6 +14,10 @@ body {
   margin-right: 10px;
 }
 
+.audio {
+float: left;
+}
+
 .outline {
   color: white;
   text-shadow:
