@@ -21,6 +21,10 @@ body {
   display: block;
 }
 
+.drawings a {
+  display: inline-block;
+}
+
 .border {
   border: 5px solid transparent;
   background: transparent;
@@ -29,6 +33,7 @@ body {
   border: 5px solid #d4d8ef;
   background: #d4d8ef;
 }
+
 @font-face {
   font-family: 'Sazanami Gothic';
   src: url('fonts/sazanamig.ttf') format('ttf');
