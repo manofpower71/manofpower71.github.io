@@ -12,13 +12,13 @@ body {
 .drawings {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: 30px;
 }
 
 .drawings img {
   width: 200px;
   height: auto;
-  display: block;
+  display: inline-block;
 }
 
 .drawings a {
