@@ -31,7 +31,8 @@ body {
 .drawings {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  float: left
+  float: left;
+  gap: 5px
 }
 
 .drawings img {
@@ -46,11 +47,11 @@ body {
 }
 
 .border {
-  border: 5px solid transparent;
+  border: 8px solid transparent;
   background: transparent;
 }
 .border:hover {
-  border: 5px solid #d4d8ef;
+  border: 8px solid #d4d8ef;
   background: #d4d8ef;
 }
 
