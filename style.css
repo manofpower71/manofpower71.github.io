@@ -15,7 +15,8 @@ body {
 }
 
 .audio {
-float: left;
+  float: initial;
+  margin-bottom: 15px;
 }
 
 .outline {
