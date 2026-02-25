@@ -2,27 +2,27 @@ body {
   background-color: #eff4ff;
   color: black;
   font-family: 'Sazanami Gothic';
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .text {
-  line-height: 0.1;
+  line-height: 0.2;
 }
 
 .drawings {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
 }
 
 .drawings img {
   width: 200px;
   height: auto;
-  display: inline-block;
+  display: block;
 }
 
 .drawings a {
-  display: inline-block;
+  justify-self: start;
+  align-self: start;
 }
 
 .border {
