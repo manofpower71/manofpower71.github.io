@@ -34,8 +34,8 @@ img {
 }
 
 .drawings {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px
 }
 
@@ -64,4 +64,16 @@ img {
   src: url('fonts/sazanamig.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+}
+
+@media (max-width: 425px) {
+  .drawings img {
+    max-width: 155px;
+  }
+}
+
+@media (max-width: 425px) {
+  .drawings {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
