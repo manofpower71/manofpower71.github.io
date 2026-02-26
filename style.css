@@ -43,6 +43,7 @@ img {
   width: 100%;
   max-width: 200px;
   display: block;
+  box-sizing: border-box;
 }
 
 .drawings a {
