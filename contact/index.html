@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makajam - Contact</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+  
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="b9469482-6733-4b29-bca0-d806f89d7145">
+      <div><input type="email" name="email" placeholder="Email" required></div>
+      <div><input type="text" name="subject" placeholder="Subject"></div>
+      <div><textarea name="message" placeholder="Message" required></textarea></div>
+      <div><button type="submit">Submit</button></div>
+      <div class="h-captcha"
+      data-captcha="true"
+      data-lang="en"
+      ></div>
+    </form>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <script>
+  const form = document.getElementById('b9469482-6733-4b29-bca0-d806f89d7145');
+
+  form.addEventListener('submit', function(e) {
+
+      const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+      if (!hCaptcha) {
+          e.preventDefault();
+          alert("Please fill out captcha field")
+          return
+      }
+  });
+  </script>
+
+  </body>
+</html>
