@@ -38,16 +38,15 @@
     <p>[Art]</a> Drawings of questionable quality.</p>
 
     <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="b9469482-6733-4b29-bca0-d806f89d7145">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="texr" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
       <div class="h-captcha"
       data-captcha="true"
       data-lang="en"
-      data-size="compact"
       ></div>
-      <input type="hidden" name="access_key" value="b9469482-6733-4b29-bca0-d806f89d7145">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit">Submit Form</button>
     </form>
 
     <script src="https://web3forms.com/client/script.js" async defer></script>
