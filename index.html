@@ -38,7 +38,11 @@
     <p>[Art]</a> Drawings of questionable quality.</p>
 
     <form action="https://api.web3forms.com/submit" method="POST">
-      <div class="h-captcha" data-captcha="true"></div>
+      <div class="h-captcha"
+      data-captcha="true"
+      data-lang="en"
+      data-size="compact"
+      ></div>
       <input type="hidden" name="access_key" value="b9469482-6733-4b29-bca0-d806f89d7145">
       <input type="text" name="name" required>
       <input type="email" name="email" required>
@@ -47,6 +51,21 @@
     </form>
 
     <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <script>
+  const form = document.getElementById('b9469482-6733-4b29-bca0-d806f89d7145');
+
+  form.addEventListener('submit', function(e) {
+
+      const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+      if (!hCaptcha) {
+          e.preventDefault();
+          alert("Please fill out captcha field")
+          return
+      }
+  });
+  </script>
 
   </body>
 </html>
