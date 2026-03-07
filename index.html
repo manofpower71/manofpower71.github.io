@@ -37,5 +37,16 @@
     <a href="https://makajam.org/art/">
     <p>[Art]</a> Drawings of questionable quality.</p>
 
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <div class="h-captcha" data-captcha="true"></div>
+      <input type="hidden" name="access_key" value="b9469482-6733-4b29-bca0-d806f89d7145">
+      <input type="text" name="name" required>
+      <input type="email" name="email" required>
+      <textarea name="message" required></textarea>
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
   </body>
 </html>
